@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — XBIHUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/jpeg" href="assets/logo-x.jpg" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo-x.jpg" alt="XBIHUB" />
+        <div class="logo-text">XBI<span>HUB</span></div>
+      </a>
+            <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav_about">About</a></li>
+        <li><a href="network.html" data-i18n="nav_network">Global Network</a></li>
+        <li><a href="tech.html" data-i18n="nav_tech">Technology</a></li>
+        <li><a href="governance.html" data-i18n="nav_governance">Governance</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" onclick="setLang(currentLang === 'en' ? 'zh' : 'en')">中文</button>
+        <a href="login.html" class="btn btn-ghost btn-sm" data-auth="login" data-i18n="nav_login">Sign In</a>
+        <a href="portal.html" class="btn btn-ghost btn-sm hidden" data-auth="portal" data-i18n="nav_portal">Portal</a>
+        <a href="admin.html" class="btn btn-ghost btn-sm hidden" data-auth="admin" data-i18n="nav_admin">Admin</a>
+        <a href="apply.html" class="btn btn-primary btn-sm" data-i18n="nav_apply">Apply Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-top: 7.5rem;">
+    <div class="container" style="max-width: 880px;">
+      <div class="section-header" style="text-align: left; margin: 0 0 3rem;">
+        <div class="label">About XBI / XBIHUB</div>
+        <h1>Sense. Understand. Evolve.</h1>
+      </div>
+
+      <div class="card mb-3">
+        <h3 data-i18n="mission_title">Mission</h3>
+        <p class="text-secondary mt-2" style="font-size: 1.25rem; line-height: 1.7; letter-spacing: 0.02em;" data-i18n="mission_text">
+          Converge intelligence. Build interstellar civilization.
+        </p>
+      </div>
+
+      <div class="card mb-3">
+        <h3>Design Principles</h3>
+        <ul class="text-secondary mt-2" style="padding-left: 1.25rem; line-height: 1.95;">
+          <li>Reduce paper and manual email cycles — without treating “e-signature complete” as automatic operational approval.</li>
+          <li>Maintain full traceability between users, applications, agreements, signature events and node status.</li>
+          <li>Prioritize security, transferability and long-term scalability.</li>
+          <li>Support global operations while retaining configuration space for regional e-signature and data rules.</li>
+        </ul>
+      </div>
+
+      <div class="card mb-3">
+        <h3>Architecture of Trust</h3>
+        <p class="text-secondary mt-2" style="line-height: 1.75;">
+          Every critical action is recorded in immutable audit logs. Electronic signatures are version-locked at the moment of sending. Node activation remains deliberately separated from agreement completion.
+        </p>
+      </div>
+
+      <div class="cta-banner mt-4">
+        <a href="apply.html" class="btn btn-primary btn-lg">Apply</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <span>© 2026 XBIHUB</span>
+        <span>V1.0</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
