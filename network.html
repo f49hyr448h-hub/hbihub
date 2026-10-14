@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Network — XBIHUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/jpeg" href="assets/logo-x.jpg" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo-x.jpg" alt="XBIHUB" />
+        <div class="logo-text">XBI<span>HUB</span></div>
+      </a>
+            <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        <li><a href="network.html" class="active" data-i18n="nav_network">Global Network</a></li>
+        <li><a href="tech.html" data-i18n="nav_tech">Technology</a></li>
+        <li><a href="governance.html" data-i18n="nav_governance">Governance</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" onclick="setLang(currentLang === 'en' ? 'zh' : 'en')">中文</button>
+        <a href="login.html" class="btn btn-ghost btn-sm" data-auth="login" data-i18n="nav_login">Sign In</a>
+        <a href="portal.html" class="btn btn-ghost btn-sm hidden" data-auth="portal" data-i18n="nav_portal">Portal</a>
+        <a href="admin.html" class="btn btn-ghost btn-sm hidden" data-auth="admin" data-i18n="nav_admin">Admin</a>
+        <a href="apply.html" class="btn btn-primary btn-sm" data-i18n="nav_apply">Apply Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-top: 7rem;">
+    <div class="container" style="text-align:center;">
+      <div class="section-header">
+        <div class="label">100 Nodes</div>
+        <h1>Global Network</h1>
+      </div>
+      <img src="assets/globe-network.png" alt="Global Node Network" style="width:100%; max-width:700px; margin: 0 auto 3rem; filter: drop-shadow(0 24px 60px rgba(0,0,0,0.5));" />
+      <div class="cta-banner" style="max-width:480px; margin:0 auto;">
+        <a href="apply.html" class="btn btn-primary btn-lg">Apply</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none; padding-top:0;">
+        <span>© 2026 XBIHUB</span>
+        <span>V1.0</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
